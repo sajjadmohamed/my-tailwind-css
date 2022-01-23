@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<title>Document Text Tailwind Css .</title>
+		<style>
+			body {
+				font-family: "Oxygen", sans-serif;
+			}
+			.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(151, 151, 151);
+  transform-origin: 50% 50%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+		</style>
+	</head>
+
+	<body class="h-screen bg-gray-100">
+		<section class="md:hfull flex items-center text-gray-600">
+			<div class="container px-1 py-2 mx-auto">
+				<div class="text-center mb-12">
+
+					<h1
+						class="text-4xl md:text-gray-700 font-semibold underline md:decoration-dashed"
+					>
+						
+					</h1>
+					<h1 class="ml14">
+						<span class="text-wrapper">
+						  <span class="letters">Tailwind Css Responsive Cards</span>
+						  <span class="line"></span>
+						</span>
+					  </h1>
+
+					  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+
+
+
+
+
+				</div>
+
+				<div class="flex flex-wrap -m justify-around">
+					<div class="p-4 sm:w-1/2 lg:w-1/3 shadow-inner rounded-lg">
+						<div
+							class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+						>
+							<img
+								src="data:image/png;base64,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"
+								alt=""
+								class="lg:h-75 md:h-48 w-full object-cover object-cover"
+							/>
+							<div
+								class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in"
+							>
+								<h2
+									class="text-base font-medium text-indigo-300"
+								>
+									January 1, 2021
+								</h2>
+
+								<h1 class="text-2xl font-semibold mb-3">
+									HTML
+								</h1>
+
+									<p class="leading-relaxed mb-4">
+										The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+										<a
+										href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+										</a>
+
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+											<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+										  </svg>
+								
+									</p>
+									<div class="flex items-center flex-wrap">
+										<a href="#" class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+											  </svg>1.5k
+										</a>
+									</div>
+									
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="p-4 sm:w-1/2 lg:w-1/3 shadow-inner rounded-lg">
+						<div
+							class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+						>
+							<img
+								src="https://laravelnews.imgix.net/images/tailwindcss-1633184775.jpg?ixlib=php-3.3.1"
+								alt=""
+								class="lg:h-75 md:h-48 w-full object-cover object-cover"
+							/>
+							<div
+								class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in"
+							>
+								<h2
+									class="text-base font-medium text-indigo-300"
+								>
+									January 1, 2020
+								</h2>
+
+								<h1 class="text-2xl font-semibold mb-3">
+									Tailwind CSS
+								</h1>
+
+									<p class="leading-relaxed mb-4">
+										A utility-first CSS framework packed with classes like flex , pt-4 ,
+										text-center and rotate-90 that can be composed to build any design, directly
+										in your markup ...
+
+										<a
+										href="https://tailwindcss.com/"
+										</a>
+
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+											<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+										  </svg>
+								
+									</p>
+									<div class="flex items-center flex-wrap">
+										<a href="#" class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+											  </svg>1.5k
+										</a>
+									</div>
+									
+								
+							</div>
+						</div>
+					</div>
+					<div class="p-4 sm:w-1/2 lg:w-1/3 shadow-inner rounded-lg">
+						<div
+							class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+						>
+							<img
+								src="https://www.softfluent.fr/wp-content/uploads/2019/10/javascript.png"
+								alt=""
+								class="lg:h-75 md:h-48 w-full object-cover object-cover"
+							/>
+							<div
+								class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in"
+							>
+								<h2
+									class="text-base font-medium text-indigo-300"
+								>
+									January 1, 2022
+								</h2>
+
+								<h1 class="text-2xl font-semibold mb-3">
+									JavaScript
+								</h1>
+
+									<p class="leading-relaxed mb-4">
+										JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party
+
+										<a
+										href="https://www.javascript.com/"
+										</a>
+
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+											<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+										  </svg>
+								
+									</p>
+									<div class="flex items-center flex-wrap">
+										<a href="#" class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+											  </svg>1.5k
+										</a>
+									</div>
+									
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Javascripet -->
+		<script src="index.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	</body>
+</html>
+
